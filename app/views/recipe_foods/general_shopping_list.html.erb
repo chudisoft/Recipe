@@ -1,0 +1,23 @@
+<h1>Shopping List</h1>
+<% if @foods.empty? %>
+  <p>Shopping list is currenttly empty as you've got enough food to make all the recipes</p>
+<% else %>
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Quantity</th>
+      <th scope="col">Price</th>
+    </tr>
+  </thead>
+    <tbody>
+      <% @foods.each do |food| %>
+        <tr>
+          <td><%= food.name %></td>
+          <td><%= food.food_remnant.abs %></td>
+          <td>$<%=shopping_value(food) %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% end %>

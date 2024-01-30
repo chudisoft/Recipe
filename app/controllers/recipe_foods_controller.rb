@@ -2,6 +2,8 @@ class RecipeFoodsController < ApplicationController
   def new
     @recipe = Recipe.find(params[:recipe_id])
     @recipe_food = RecipeFood.new
+    # @foods = current_user.foods.includes(:recipe_foods).where.not(recipe_foods: { recipe: @recipe })
+
     @foods = current_user.foods.select do |food|
       recipe_foods = food.recipe_foods.select { |recipe_food| recipe_food.recipe == @recipe }
       recipe_foods.empty?
@@ -33,7 +35,9 @@ class RecipeFoodsController < ApplicationController
     end
   end
 
-  def general_shopping_list; end
+  def general_shopping_list
+    @foods = current_user.foods.all.select { |food| food.food_remnant.negative? }
+  end
 
   def recipe_food_params
     params.require(:recipe_food).permit(:quantity, :food_id)
