@@ -31,7 +31,9 @@ class RecipesController < ApplicationController
     end
   end
 
-  def public_recipes; end
+  def public_recipes
+    @recipes = Recipe.where(public: true)
+  end
 
   def recipe_params
     params.require(:recipe).permit(:name, :preparation_time, :cooking_time, :description, :user_id)
