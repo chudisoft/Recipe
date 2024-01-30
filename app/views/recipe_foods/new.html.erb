@@ -1,0 +1,9 @@
+<section class="formSection">
+  <%= form_with model: [@recipe, @recipe_food], url: recipe_recipe_foods_path(@recipe) do |form| %>
+    <%= form.number_field :quantity, placeholder: 'Quantity', min: 0 %>
+    <%= form.hidden_field :recipe_id, value: @recipe.id %>
+    <label for="foods">Select a Food</label>
+    <%= form.select :food_id, options_for_select(@foods.map { |food| [food.name, food.id] }), {}, { id: 'food' } %>
+    <%= form.submit 'Add to Recipe', class: 'btnSubmit' %>
+  <% end %>
+</section>

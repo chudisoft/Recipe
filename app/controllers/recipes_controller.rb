@@ -1,8 +1,39 @@
 class RecipesController < ApplicationController
-  def index; end
-  def show; end
-  def new; end
-  def create; end
-  def destroy; end
+  def index
+    @recipes = Recipe.where(user_id: current_user.id)
+  end
+
+  def show
+    @recipe = Recipe.find(params[:id])
+    @foods = Food.joins(:recipe_foods).where(recipe_foods: { recipe_id: @recipe.id })
+  end
+
+  def new
+    @recipe = Recipe.new
+  end
+
+  def create
+    @recipe = Recipe.new(recipe_params)
+    @recipe.user = current_user
+    if @recipe.save
+      redirect_to recipes_path
+    else
+      render 'new'
+    end
+  end
+
+  def destroy
+    @recipe = Recipe.find(params[:id])
+    if @recipe.destroy
+      redirect_to recipes_path
+    else
+      flash[:alert] = 'recipe could not be deleted.'
+    end
+  end
+
   def public_recipes; end
+
+  def recipe_params
+    params.require(:recipe).permit(:name, :preparation_time, :cooking_time, :description, :user_id)
+  end
 end
