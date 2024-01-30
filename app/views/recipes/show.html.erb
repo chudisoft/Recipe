@@ -1,0 +1,52 @@
+<div class="container-fluid">
+<div class="container">
+<div class="row text-center">
+<h2><%= @recipe.name %></h2>
+</div>
+
+<div class="row">
+<p>Preparation time: <%= @recipe.preparation_time %></p>
+</div>
+
+<div class="row">
+<p>Cooking time: <%= @recipe.cooking_time %></p>
+</div>
+
+<div class="row">
+<p>Description: <%= @recipe.description %></p>
+</div>
+<div class="row">
+<div class="col-6 recipebtn-group1">
+<button type="button" class="btn btn-primary">Generate Shopping List</button>
+</div>
+<div class="col-6 recipebtn-group2">
+<button type="button" class="btn btn-primary"><%= link_to "Add Ingredient", new_recipe_recipe_food_path(@recipe), class: "no-underline"%></button>
+</div>
+</div>
+
+</div>
+
+<table class="table table-bordered">
+<thead>
+<tr>
+  <th>Food</th>
+  <th>Quantity</th>
+  <th>Value</th>
+  <th>Actions</th>
+</tr>
+</thead>
+<tbody>
+<% @foods.each do |recipe_item| %>
+<tr>
+<td><%= recipe_item.name %></td>
+      <td><%= recipe_item.quantity %></td>
+      <td><div>$<%= recipe_item.price * recipe_item.quantity %></div></td>
+      <td> <div>
+      <%= recipe_item %> 
+      <%= button_to "Remove", recipe_recipe_food_path(@recipe, recipe_item), method: :delete, data: { turbo_confirm: "Are you sure?" } %>
+      </div></td>
+</tr>
+<% end %>
+</tbody>
+</table>
+</div>

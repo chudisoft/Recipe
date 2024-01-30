@@ -13,10 +13,6 @@
  *= require_tree .
  *= require_self
  */
-button {
-  color: white !important;
-}
-
 nav ul {
   display: flex;
   text-decoration: none;
@@ -33,4 +29,25 @@ nav li {
 .no-underline {
   text-decoration: none;
   color: white;
+}
+
+.recipe {
+  border: 1px solid black;
+  margin: 1%;
+  padding: 1%;
+}
+
+.add-btn {
+  display: flex;
+  justify-content: right;
+  margin: 1% 0;
+}
+
+.recipebtn-group1 {
+  display: flex;
+}
+
+.recipebtn-group2 {
+  display: flex;
+  justify-content: right;
 }
