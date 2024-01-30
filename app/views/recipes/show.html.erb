@@ -36,11 +36,11 @@
 </tr>
 </thead>
 <tbody>
-<% @foods.each do |recipe_item| %>
+<% @recipe_foods.each do |recipe_item| %>
 <tr>
-<td><%= recipe_item.name %></td>
+      <td><%= recipe_item.food.name %></td>
       <td><%= recipe_item.quantity %></td>
-      <td><div>$<%= recipe_item.price * recipe_item.quantity %></div></td>
+      <td><div>$<%= recipe_item.food.price * recipe_item.quantity %></div></td>
       <td> <div>
       <%= button_to "Remove", recipe_recipe_food_path(@recipe, recipe_item), method: :delete, data: { turbo_confirm: "Are you sure?" } %>
       </div></td>

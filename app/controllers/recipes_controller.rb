@@ -5,7 +5,7 @@ class RecipesController < ApplicationController
 
   def show
     @recipe = Recipe.find(params[:id])
-    @foods = Food.joins(:recipe_foods).where(recipe_foods: { recipe_id: @recipe.id })
+    @recipe_foods = @recipe.recipe_foods
   end
 
   def new
@@ -33,6 +33,12 @@ class RecipesController < ApplicationController
 
   def public_recipes
     @recipes = Recipe.where(public: true)
+  end
+
+  private
+
+  def set_recipe
+    @recipe = Recipe.find(params[:id])
   end
 
   def recipe_params
