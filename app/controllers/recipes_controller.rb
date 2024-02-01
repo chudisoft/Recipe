@@ -31,6 +31,16 @@ class RecipesController < ApplicationController
     end
   end
 
+  def toggle_public
+    @recipe = Recipe.find(params[:id])
+    if current_user == @recipe.user
+      @recipe.update(public: !@recipe.public)
+      redirect_to @recipe, notice: 'Recipe visibility toggled.'
+    else
+      redirect_to @recipe, alert: 'You are not authorized to perform this action.'
+    end
+  end
+
   def public_recipes
     @recipes = Recipe.where(public: true)
   end
