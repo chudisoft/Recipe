@@ -1,5 +1,8 @@
 <div class="container">
-<button type="button" class="btn btn-primary add-btn"><%= link_to "Add Food", new_food_path, class: "no-underline"%></button>
+<h1>Your Foods</h1>
+
+<%= link_to 'Add Food', new_food_path, class: 'btn btn-primary mb-3 float-end' %>
+
 <table class="table table-bordered">
 <thead>
 <tr>
@@ -15,7 +18,7 @@
 <td><%= food.name %></td>
 <td><%= food.measurement_unit %></td>
 <td><%= food.price %></td>
-<td><%= button_to "Delete", food_path(food.id), method: :delete %></td>
+<td><%= button_to "Delete", food_path(food.id), method: :delete, class: 'btn btn-sm btn-danger' %></td>
 </tr>
 <% end %>
 </tbody>

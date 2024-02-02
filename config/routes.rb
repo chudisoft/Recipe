@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
-  devise_scope :user do  
-    get '/users/sign_out' => 'devise/sessions#destroy'     
+  devise_scope :user do
+    get '/users/sign_out' => 'devise/sessions#destroy'
  end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
@@ -13,6 +13,9 @@ Rails.application.routes.draw do
 
   resources :recipes, except: [:edit] do
     resources :recipe_foods, only: [:new, :create, :destroy]
+    member do
+      patch 'toggle_public', to: 'recipes#toggle_public' # Route for toggling recipe public/private status
+    end
   end
 
   get '/public_recipes', to: 'recipes#public_recipes'

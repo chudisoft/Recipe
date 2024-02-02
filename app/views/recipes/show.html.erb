@@ -1,51 +1,80 @@
 <div class="container-fluid">
-<div class="container">
-<div class="row text-center">
-<h2><%= @recipe.name %></h2>
+  <div class="container">
+    <div class="row text-center">
+    <h2><%= @recipe.name %></h2>
+    </div>
+
+    <div class='row justify-content-between'>
+      <div class='col-md-4'>
+          Preparation time: <%= @recipe.preparation_time %> hours
+      </div>
+      <div class='col-md-2'>
+          <% if current_user == @recipe.user %>
+              <%= form_with(model: @recipe, url: toggle_public_recipe_path(@recipe), method: :patch, class: "mb-3", id: "toggle-public-form") do |form| %>
+                  <div class="form-check form-switch">
+                    <%= form.hidden_field :public, value: 0 %>
+                    <%= form.check_box :public, class: "form-check-input", id: "public-checkbox", checked: @recipe.public, data: { toggle: "toggle" } %>
+                    <%= form.label :public, "Public", class: "form-check-label", for: "public-checkbox" %>
+                  </div>
+              <% end %>
+          <% end %>
+      </div>
+      <div class='col-md-12'>
+          Cooking time: <%= @recipe.cooking_time %> hours
+      </div>
+    </div>
+    <div class="row">
+      <p>Description: <%= @recipe.description %></p>
+    </div>
+    <div class="row">
+      <div class="col-6 recipebtn-group1">
+        <%= link_to "Generate Shopping List", general_shopping_list_path, class:"btn btn-primary" %>
+      </div>
+      <div class="col-6 recipebtn-group2">
+        <% if current_user == @recipe.user %>
+          <%= link_to "Add Ingredients", new_recipe_recipe_food_path(@recipe), class: 'btn btn-outline-primary btn-sm' %>
+        <% end %>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container table-responsive mt-2">
+    <table class="table table-bordered">
+      <thead>
+      <tr>
+        <th>Food</th>
+        <th>Quantity</th>
+        <th>Value</th>
+        <th>Actions</th>
+      </tr>
+      </thead>
+      <tbody>
+        <% @recipe_foods.each do |recipe_item| %>
+        <tr>
+              <td><%= recipe_item.food.name %></td>
+              <td><%= recipe_item.quantity %></td>
+              <td><div>$<%= recipe_item.food.price * recipe_item.quantity %></div></td>
+              <td> <div>
+              <%= button_to "Remove", recipe_recipe_food_path(@recipe, recipe_item), method: :delete, data: { turbo_confirm: "Are you sure?" }, class: 'btn btn-danger btn-sm' %>
+              </div></td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
 </div>
 
-<div class="row">
-<p>Preparation time: <%= @recipe.preparation_time %></p>
-</div>
 
-<div class="row">
-<p>Cooking time: <%= @recipe.cooking_time %></p>
-</div>
 
-<div class="row">
-<p>Description: <%= @recipe.description %></p>
-</div>
-<div class="row">
-<div class="col-6 recipebtn-group1">
-<%= link_to "Generate Shopping List", general_shopping_list_path, class:"btn btn-primary" %>
-</div>
-<div class="col-6 recipebtn-group2">
-<button type="button" class="btn btn-primary"><%= link_to "Add Ingredient", new_recipe_recipe_food_path(@recipe), class: "no-underline"%></button>
-</div>
-</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const publicCheckbox = document.getElementById('public-checkbox');
+    const togglePublicForm = document.getElementById('toggle-public-form');
 
-</div>
+    publicCheckbox.addEventListener('change', function() {
+      togglePublicForm.submit();
+    });
+  });
 
-<table class="table table-bordered">
-<thead>
-<tr>
-  <th>Food</th>
-  <th>Quantity</th>
-  <th>Value</th>
-  <th>Actions</th>
-</tr>
-</thead>
-<tbody>
-<% @recipe_foods.each do |recipe_item| %>
-<tr>
-      <td><%= recipe_item.food.name %></td>
-      <td><%= recipe_item.quantity %></td>
-      <td><div>$<%= recipe_item.food.price * recipe_item.quantity %></div></td>
-      <td> <div>
-      <%= button_to "Remove", recipe_recipe_food_path(@recipe, recipe_item), method: :delete, data: { turbo_confirm: "Are you sure?" } %>
-      </div></td>
-</tr>
-<% end %>
-</tbody>
-</table>
-</div>
+</script>
