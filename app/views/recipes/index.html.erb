@@ -1,0 +1,22 @@
+<div class="container">
+    <h1>Your Recipes</h1>
+    <div class="add-btn">
+        <button type="button" class="btn btn-primary"><%= link_to "Add Recipe", new_recipe_path, class: "no-underline"%></button>
+    </div>
+    <div class="row">
+        <% @recipes.each do |recipe| %>
+            <div class="recipe card">
+                <div class="row">
+                    <div class="col-md-6"><%= link_to recipe.name, recipe_path(recipe.id)  %></div>
+                    <div class="col-md-6"> By <%= recipe.user.name %></div>
+                    <div class="col-md-10"><%= recipe.description %></div>
+                    <div class="col-md-2">
+                        <%= button_to "Delete", recipe_path(recipe.id), method: :delete, class: 'btn btn-sm btn-danger' %>
+                    </div>
+                </div>
+            </div>
+        <% end %>
+    </div>
+</div>
+
+
