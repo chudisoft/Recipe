@@ -3,6 +3,13 @@
   <% if @foods.empty? %>
     <p>Shopping list is currenttly empty as you've got enough recipes to make all the foods</p>
   <% else %>
+  
+    <div class="shopping-title">
+      <p>Amount of food items to buy: <%=@foods.size%></p>
+      <% @total = @foods.sum { |food| shopping_value(food) } %>
+      <p>Total value of food needed: $<%=@total%></p>
+    </div>
+
     <table class="table">
     <thead>
       <tr>

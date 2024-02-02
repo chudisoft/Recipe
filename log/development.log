@@ -6708,3 +6708,659 @@ Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-01 19:29:05 +0100
   
 ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
   
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 11:42:40 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (4.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 11:43:18 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 11:43:49 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 11:44:20 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 11:44:51 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 11:45:23 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/" for 127.0.0.1 at 2024-02-02 11:45:35 +0100
+Processing by FoodsController#index as HTML
+  [1m[36mUser Load (8.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (6.1ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/foods/index.html.erb:16
+  Rendered foods/index.html.erb within layouts/application (Duration: 102.7ms | Allocations: 7629)
+  Rendered layout layouts/application.html.erb (Duration: 317.6ms | Allocations: 31535)
+Completed 200 OK in 1016ms (Views: 331.2ms | ActiveRecord: 127.3ms | Allocations: 64974)
+
+
+Started GET "/general_shopping_list" for 127.0.0.1 at 2024-02-02 11:45:42 +0100
+Processing by RecipeFoodsController#general_shopping_list as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFood Load (0.7ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/recipe_foods_controller.rb:39:in `general_shopping_list'
+  [1m[36mRecipeFood Sum (7.4ms)[0m  [1m[34mSELECT SUM("recipe_foods"."quantity") FROM "recipe_foods" WHERE "recipe_foods"."food_id" = $1[0m  [["food_id", 6]]
+  ↳ app/models/food.rb:11:in `food_remnant'
+  Rendering layout layouts/application.html.erb
+  Rendering recipe_foods/general_shopping_list.html.erb within layouts/application
+  Rendered recipe_foods/general_shopping_list.html.erb within layouts/application (Duration: 1.5ms | Allocations: 262)
+  Rendered layout layouts/application.html.erb (Duration: 31.1ms | Allocations: 2050)
+Completed 200 OK in 207ms (Views: 47.0ms | ActiveRecord: 18.9ms | Allocations: 10527)
+
+
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 11:45:54 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 11:46:25 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 11:46:57 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 11:47:28 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 11:48:00 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 11:48:31 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 11:49:02 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 11:49:34 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 11:50:05 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 11:50:36 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 11:51:08 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 11:51:39 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 11:52:10 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 11:52:41 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 11:53:13 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 11:53:44 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 11:54:15 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 11:54:47 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 11:55:18 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 11:55:49 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 11:56:20 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 11:56:51 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 11:57:21 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 11:57:53 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 11:58:24 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 11:58:55 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 11:59:26 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 11:59:57 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 12:00:28 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/foods" for 127.0.0.1 at 2024-02-02 12:00:41 +0100
+Processing by FoodsController#index as HTML
+  [1m[36mUser Load (6.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (4.3ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/foods/index.html.erb:16
+  Rendered foods/index.html.erb within layouts/application (Duration: 24.8ms | Allocations: 3867)
+  Rendered layout layouts/application.html.erb (Duration: 47.9ms | Allocations: 6078)
+Completed 200 OK in 388ms (Views: 70.1ms | ActiveRecord: 44.9ms | Allocations: 19574)
+
+
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 12:00:59 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/foods/new" for 127.0.0.1 at 2024-02-02 12:01:24 +0100
+Processing by FoodsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering foods/new.html.erb within layouts/application
+  Rendered foods/new.html.erb within layouts/application (Duration: 315.4ms | Allocations: 11360)
+  Rendered layout layouts/application.html.erb (Duration: 332.8ms | Allocations: 13121)
+Completed 200 OK in 351ms (Views: 337.1ms | ActiveRecord: 0.5ms | Allocations: 14975)
+
+
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 12:01:30 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started POST "/foods" for 127.0.0.1 at 2024-02-02 12:01:44 +0100
+Processing by FoodsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "food"=>{"name"=>"Apple", "measurement_unit"=>"kg", "quantity"=>"500", "price"=>"100"}, "commit"=>"Create Food"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/foods_controller.rb:18:in `create'
+  [1m[36mFood Create (13.3ms)[0m  [1m[32mINSERT INTO "foods" ("name", "measurement_unit", "price", "quantity", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Apple"], ["measurement_unit", "kg"], ["price", "100.0"], ["quantity", 500], ["user_id", 1], ["created_at", "2024-02-02 11:01:44.418145"], ["updated_at", "2024-02-02 11:01:44.418145"]]
+  ↳ app/controllers/foods_controller.rb:18:in `create'
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/foods_controller.rb:18:in `create'
+Redirected to http://127.0.0.1:3000/foods
+Completed 302 Found in 64ms (ActiveRecord: 16.9ms | Allocations: 5393)
+
+
+Started GET "/foods" for 127.0.0.1 at 2024-02-02 12:01:44 +0100
+Processing by FoodsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mFood Load (0.6ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/foods/index.html.erb:16
+  Rendered foods/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 784)
+  Rendered layout layouts/application.html.erb (Duration: 24.7ms | Allocations: 2536)
+Completed 200 OK in 38ms (Views: 28.2ms | ActiveRecord: 1.1ms | Allocations: 4356)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2024-02-02 12:01:49 +0100
+Processing by RecipesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (5.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/recipes/index.html.erb:7
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:11
+  Rendered recipes/index.html.erb within layouts/application (Duration: 106.5ms | Allocations: 9878)
+  Rendered layout layouts/application.html.erb (Duration: 124.2ms | Allocations: 11606)
+Completed 200 OK in 210ms (Views: 128.0ms | ActiveRecord: 44.1ms | Allocations: 15797)
+
+
+Started GET "/general_shopping_list" for 127.0.0.1 at 2024-02-02 12:01:55 +0100
+Processing by RecipeFoodsController#general_shopping_list as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFood Load (1.5ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/recipe_foods_controller.rb:39:in `general_shopping_list'
+  [1m[36mRecipeFood Sum (12.8ms)[0m  [1m[34mSELECT SUM("recipe_foods"."quantity") FROM "recipe_foods" WHERE "recipe_foods"."food_id" = $1[0m  [["food_id", 6]]
+  ↳ app/models/food.rb:11:in `food_remnant'
+  [1m[36mRecipeFood Sum (0.8ms)[0m  [1m[34mSELECT SUM("recipe_foods"."quantity") FROM "recipe_foods" WHERE "recipe_foods"."food_id" = $1[0m  [["food_id", 7]]
+  ↳ app/models/food.rb:11:in `food_remnant'
+  Rendering layout layouts/application.html.erb
+  Rendering recipe_foods/general_shopping_list.html.erb within layouts/application
+  Rendered recipe_foods/general_shopping_list.html.erb within layouts/application (Duration: 2.2ms | Allocations: 312)
+  Rendered layout layouts/application.html.erb (Duration: 29.7ms | Allocations: 2071)
+Completed 200 OK in 173ms (Views: 59.9ms | ActiveRecord: 15.5ms | Allocations: 8274)
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2024-02-02 12:01:59 +0100
+Processing by RecipesController#new as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/new.html.erb within layouts/application (Duration: 74.8ms | Allocations: 1863)
+  Rendered layout layouts/application.html.erb (Duration: 105.8ms | Allocations: 3624)
+Completed 200 OK in 171ms (Views: 116.8ms | ActiveRecord: 1.1ms | Allocations: 5478)
+
+
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 12:02:01 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started POST "/recipes" for 127.0.0.1 at 2024-02-02 12:02:21 +0100
+Processing by RecipesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe"=>{"name"=>"Juice", "preparation_time"=>"12", "cooking_time"=>"10", "description"=>"Test Description"}, "commit"=>"Create Recipe"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/recipes_controller.rb:18:in `create'
+  [1m[36mRecipe Create (6.4ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "preparation_time", "cooking_time", "description", "public", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Juice"], ["preparation_time", 12], ["cooking_time", 10], ["description", "Test Description"], ["public", nil], ["user_id", 1], ["created_at", "2024-02-02 11:02:21.430327"], ["updated_at", "2024-02-02 11:02:21.430327"]]
+  ↳ app/controllers/recipes_controller.rb:18:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/recipes_controller.rb:18:in `create'
+Redirected to http://127.0.0.1:3000/recipes
+Completed 302 Found in 61ms (ActiveRecord: 8.1ms | Allocations: 4297)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2024-02-02 12:02:21 +0100
+Processing by RecipesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/recipes/index.html.erb:7
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/index.html.erb:11
+  Rendered recipes/index.html.erb within layouts/application (Duration: 26.5ms | Allocations: 1878)
+  Rendered layout layouts/application.html.erb (Duration: 61.7ms | Allocations: 3630)
+Completed 200 OK in 78ms (Views: 64.2ms | ActiveRecord: 1.6ms | Allocations: 5430)
+
+
+Started GET "/general_shopping_list" for 127.0.0.1 at 2024-02-02 12:02:25 +0100
+Processing by RecipeFoodsController#general_shopping_list as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFood Load (0.5ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/recipe_foods_controller.rb:39:in `general_shopping_list'
+  [1m[36mRecipeFood Sum (0.9ms)[0m  [1m[34mSELECT SUM("recipe_foods"."quantity") FROM "recipe_foods" WHERE "recipe_foods"."food_id" = $1[0m  [["food_id", 6]]
+  ↳ app/models/food.rb:11:in `food_remnant'
+  [1m[36mRecipeFood Sum (0.9ms)[0m  [1m[34mSELECT SUM("recipe_foods"."quantity") FROM "recipe_foods" WHERE "recipe_foods"."food_id" = $1[0m  [["food_id", 7]]
+  ↳ app/models/food.rb:11:in `food_remnant'
+  Rendering layout layouts/application.html.erb
+  Rendering recipe_foods/general_shopping_list.html.erb within layouts/application
+  Rendered recipe_foods/general_shopping_list.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 29.4ms | Allocations: 1743)
+Completed 200 OK in 68ms (Views: 33.2ms | ActiveRecord: 2.8ms | Allocations: 5321)
+
+
+Started GET "/general_shopping_list" for 127.0.0.1 at 2024-02-02 12:02:29 +0100
+Processing by RecipeFoodsController#general_shopping_list as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFood Load (0.6ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/recipe_foods_controller.rb:39:in `general_shopping_list'
+  [1m[36mRecipeFood Sum (1.4ms)[0m  [1m[34mSELECT SUM("recipe_foods"."quantity") FROM "recipe_foods" WHERE "recipe_foods"."food_id" = $1[0m  [["food_id", 6]]
+  ↳ app/models/food.rb:11:in `food_remnant'
+  [1m[36mRecipeFood Sum (0.9ms)[0m  [1m[34mSELECT SUM("recipe_foods"."quantity") FROM "recipe_foods" WHERE "recipe_foods"."food_id" = $1[0m  [["food_id", 7]]
+  ↳ app/models/food.rb:11:in `food_remnant'
+  Rendering layout layouts/application.html.erb
+  Rendering recipe_foods/general_shopping_list.html.erb within layouts/application
+  Rendered recipe_foods/general_shopping_list.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 29.9ms | Allocations: 1743)
+Completed 200 OK in 60ms (Views: 31.7ms | ActiveRecord: 2.6ms | Allocations: 5321)
+
+
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 12:02:32 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/recipes/7" for 127.0.0.1 at 2024-02-02 12:02:34 +0100
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mUser Load (6.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/show.html.erb:12
+  [1m[36mRecipeFood Load (0.5ms)[0m  [1m[34mSELECT "recipe_foods".* FROM "recipe_foods" WHERE "recipe_foods"."recipe_id" = $1[0m  [["recipe_id", 7]]
+  ↳ app/views/recipes/show.html.erb:53
+  Rendered recipes/show.html.erb within layouts/application (Duration: 363.9ms | Allocations: 12276)
+  Rendered layout layouts/application.html.erb (Duration: 382.5ms | Allocations: 14024)
+Completed 200 OK in 414ms (Views: 379.9ms | ActiveRecord: 7.7ms | Allocations: 17309)
+
+
+Started GET "/recipes/7/recipe_foods/new" for 127.0.0.1 at 2024-02-02 12:02:37 +0100
+Processing by RecipeFoodsController#new as HTML
+  Parameters: {"recipe_id"=>"7"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/recipe_foods_controller.rb:3:in `new'
+  [1m[36mFood Load (0.6ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/recipe_foods_controller.rb:7:in `new'
+  [1m[36mRecipeFood Load (0.5ms)[0m  [1m[34mSELECT "recipe_foods".* FROM "recipe_foods" WHERE "recipe_foods"."food_id" = $1[0m  [["food_id", 6]]
+  ↳ app/controllers/recipe_foods_controller.rb:8:in `block in new'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/recipe_foods_controller.rb:8:in `block (2 levels) in new'
+  [1m[36mRecipeFood Load (0.7ms)[0m  [1m[34mSELECT "recipe_foods".* FROM "recipe_foods" WHERE "recipe_foods"."food_id" = $1[0m  [["food_id", 7]]
+  ↳ app/controllers/recipe_foods_controller.rb:8:in `block in new'
+  Rendering layout layouts/application.html.erb
+  Rendering recipe_foods/new.html.erb within layouts/application
+  Rendered recipe_foods/new.html.erb within layouts/application (Duration: 18.3ms | Allocations: 944)
+  Rendered layout layouts/application.html.erb (Duration: 57.4ms | Allocations: 2663)
+Completed 200 OK in 151ms (Views: 63.1ms | ActiveRecord: 3.1ms | Allocations: 14495)
+
+
+Started POST "/recipes/7/recipe_foods" for 127.0.0.1 at 2024-02-02 12:02:47 +0100
+Processing by RecipeFoodsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe_food"=>{"quantity"=>"3", "recipe_id"=>"7", "food_id"=>"7"}, "commit"=>"Add to Recipe", "recipe_id"=>"7"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/recipe_foods_controller.rb:14:in `create'
+[31mUnpermitted parameter: :recipe_id. Context: { controller: RecipeFoodsController, action: create, request: #<ActionDispatch::Request:0x00000213cdc21b80>, params: {"authenticity_token"=>"[FILTERED]", "recipe_food"=>{"quantity"=>"3", "recipe_id"=>"7", "food_id"=>"7"}, "commit"=>"Add to Recipe", "controller"=>"recipe_foods", "action"=>"create", "recipe_id"=>"7"} }[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/recipe_foods_controller.rb:19:in `create'
+  [1m[36mFood Load (0.7ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/recipe_foods_controller.rb:19:in `create'
+  [1m[36mRecipe Load (1.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/recipe_foods_controller.rb:19:in `create'
+  [1m[36mRecipeFood Create (3.0ms)[0m  [1m[32mINSERT INTO "recipe_foods" ("recipe_id", "food_id", "user_id", "quantity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["recipe_id", 7], ["food_id", 7], ["user_id", 1], ["quantity", 3], ["created_at", "2024-02-02 11:02:47.878013"], ["updated_at", "2024-02-02 11:02:47.878013"]]
+  ↳ app/controllers/recipe_foods_controller.rb:19:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/recipe_foods_controller.rb:19:in `create'
+Redirected to http://127.0.0.1:3000/recipes/7
+Completed 302 Found in 67ms (ActiveRecord: 6.9ms | Allocations: 6537)
+
+
+Started GET "/recipes/7" for 127.0.0.1 at 2024-02-02 12:02:47 +0100
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/show.html.erb:12
+  [1m[36mRecipeFood Load (1.1ms)[0m  [1m[34mSELECT "recipe_foods".* FROM "recipe_foods" WHERE "recipe_foods"."recipe_id" = $1[0m  [["recipe_id", 7]]
+  ↳ app/views/recipes/show.html.erb:53
+  [1m[36mFood Load (0.7ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/recipes/show.html.erb:55
+  Rendered recipes/show.html.erb within layouts/application (Duration: 26.5ms | Allocations: 2227)
+  Rendered layout layouts/application.html.erb (Duration: 46.4ms | Allocations: 3946)
+Completed 200 OK in 64ms (Views: 46.0ms | ActiveRecord: 3.3ms | Allocations: 6182)
+
+
+Started GET "/general_shopping_list" for 127.0.0.1 at 2024-02-02 12:02:53 +0100
+Processing by RecipeFoodsController#general_shopping_list as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFood Load (1.6ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/recipe_foods_controller.rb:39:in `general_shopping_list'
+  [1m[36mRecipeFood Sum (0.6ms)[0m  [1m[34mSELECT SUM("recipe_foods"."quantity") FROM "recipe_foods" WHERE "recipe_foods"."food_id" = $1[0m  [["food_id", 6]]
+  ↳ app/models/food.rb:11:in `food_remnant'
+  [1m[36mRecipeFood Sum (0.5ms)[0m  [1m[34mSELECT SUM("recipe_foods"."quantity") FROM "recipe_foods" WHERE "recipe_foods"."food_id" = $1[0m  [["food_id", 7]]
+  ↳ app/models/food.rb:11:in `food_remnant'
+  Rendering layout layouts/application.html.erb
+  Rendering recipe_foods/general_shopping_list.html.erb within layouts/application
+  Rendered recipe_foods/general_shopping_list.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 42.7ms | Allocations: 1798)
+Completed 200 OK in 113ms (Views: 45.5ms | ActiveRecord: 3.0ms | Allocations: 5370)
+
+
+Started GET "/general_shopping_list" for 127.0.0.1 at 2024-02-02 12:03:03 +0100
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 12:03:03 +0100
+Processing by RecipeFoodsController#general_shopping_list as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFood Load (0.7ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/recipe_foods_controller.rb:39:in `general_shopping_list'
+  [1m[36mRecipeFood Sum (1.2ms)[0m  [1m[34mSELECT SUM("recipe_foods"."quantity") FROM "recipe_foods" WHERE "recipe_foods"."food_id" = $1[0m  [["food_id", 6]]
+  ↳ app/models/food.rb:11:in `food_remnant'
+  [1m[36mRecipeFood Sum (1.9ms)[0m  [1m[34mSELECT SUM("recipe_foods"."quantity") FROM "recipe_foods" WHERE "recipe_foods"."food_id" = $1[0m  [["food_id", 7]]
+  ↳ app/models/food.rb:11:in `food_remnant'
+  Rendering layout layouts/application.html.erb
+  Rendering recipe_foods/general_shopping_list.html.erb within layouts/application
+  Rendered recipe_foods/general_shopping_list.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 45.3ms | Allocations: 1866)
+Completed 200 OK in 102ms (Views: 48.3ms | ActiveRecord: 4.0ms | Allocations: 5466)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 12:03:34 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 12:04:05 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 12:04:37 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 12:05:08 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 12:05:39 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started DELETE "/recipes/7/recipe_foods/11" for 127.0.0.1 at 2024-02-02 12:05:58 +0100
+Processing by RecipeFoodsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe_id"=>"7", "id"=>"11"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/recipe_foods_controller.rb:28:in `destroy'
+  [1m[36mRecipeFood Load (0.7ms)[0m  [1m[34mSELECT "recipe_foods".* FROM "recipe_foods" WHERE "recipe_foods"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/recipe_foods_controller.rb:29:in `destroy'
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 7]]
+  ↳ app/controllers/recipe_foods_controller.rb:29:in `destroy'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/recipe_foods_controller.rb:31:in `destroy'
+  [1m[36mRecipeFood Destroy (5.4ms)[0m  [1m[31mDELETE FROM "recipe_foods" WHERE "recipe_foods"."id" = $1[0m  [["id", 11]]
+  ↳ app/controllers/recipe_foods_controller.rb:31:in `destroy'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/recipe_foods_controller.rb:31:in `destroy'
+Redirected to http://127.0.0.1:3000/recipes/7
+Completed 302 Found in 451ms (ActiveRecord: 9.0ms | Allocations: 13965)
+
+
+Started GET "/recipes/7" for 127.0.0.1 at 2024-02-02 12:05:58 +0100
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/show.html.erb:12
+  [1m[36mRecipeFood Load (1.4ms)[0m  [1m[34mSELECT "recipe_foods".* FROM "recipe_foods" WHERE "recipe_foods"."recipe_id" = $1[0m  [["recipe_id", 7]]
+  ↳ app/views/recipes/show.html.erb:53
+  Rendered recipes/show.html.erb within layouts/application (Duration: 26.7ms | Allocations: 1474)
+  Rendered layout layouts/application.html.erb (Duration: 49.9ms | Allocations: 3222)
+Completed 200 OK in 71ms (Views: 49.9ms | ActiveRecord: 3.0ms | Allocations: 5441)
+
+
+Started GET "/recipes/7/recipe_foods/new" for 127.0.0.1 at 2024-02-02 12:06:01 +0100
+Processing by RecipeFoodsController#new as HTML
+  Parameters: {"recipe_id"=>"7"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/recipe_foods_controller.rb:3:in `new'
+  [1m[36mFood Load (1.5ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/recipe_foods_controller.rb:7:in `new'
+  [1m[36mRecipeFood Load (0.6ms)[0m  [1m[34mSELECT "recipe_foods".* FROM "recipe_foods" WHERE "recipe_foods"."food_id" = $1[0m  [["food_id", 6]]
+  ↳ app/controllers/recipe_foods_controller.rb:8:in `block in new'
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/recipe_foods_controller.rb:8:in `block (2 levels) in new'
+  [1m[36mRecipeFood Load (0.8ms)[0m  [1m[34mSELECT "recipe_foods".* FROM "recipe_foods" WHERE "recipe_foods"."food_id" = $1[0m  [["food_id", 7]]
+  ↳ app/controllers/recipe_foods_controller.rb:8:in `block in new'
+  Rendering layout layouts/application.html.erb
+  Rendering recipe_foods/new.html.erb within layouts/application
+  Rendered recipe_foods/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 320)
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 2068)
+Completed 200 OK in 75ms (Views: 28.0ms | ActiveRecord: 3.8ms | Allocations: 6634)
+
+
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 12:06:11 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started POST "/recipes/7/recipe_foods" for 127.0.0.1 at 2024-02-02 12:06:25 +0100
+Processing by RecipeFoodsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "recipe_food"=>{"quantity"=>"550", "recipe_id"=>"7", "food_id"=>"7"}, "commit"=>"Add to Recipe", "recipe_id"=>"7"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/recipe_foods_controller.rb:14:in `create'
+[31mUnpermitted parameter: :recipe_id. Context: { controller: RecipeFoodsController, action: create, request: #<ActionDispatch::Request:0x00000213cf15fb50>, params: {"authenticity_token"=>"[FILTERED]", "recipe_food"=>{"quantity"=>"550", "recipe_id"=>"7", "food_id"=>"7"}, "commit"=>"Add to Recipe", "controller"=>"recipe_foods", "action"=>"create", "recipe_id"=>"7"} }[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/recipe_foods_controller.rb:19:in `create'
+  [1m[36mFood Load (1.4ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/recipe_foods_controller.rb:19:in `create'
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/recipe_foods_controller.rb:19:in `create'
+  [1m[36mRecipeFood Create (1.5ms)[0m  [1m[32mINSERT INTO "recipe_foods" ("recipe_id", "food_id", "user_id", "quantity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["recipe_id", 7], ["food_id", 7], ["user_id", 1], ["quantity", 550], ["created_at", "2024-02-02 11:06:26.274056"], ["updated_at", "2024-02-02 11:06:26.274056"]]
+  ↳ app/controllers/recipe_foods_controller.rb:19:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/recipe_foods_controller.rb:19:in `create'
+Redirected to http://127.0.0.1:3000/recipes/7
+Completed 302 Found in 51ms (ActiveRecord: 5.3ms | Allocations: 5380)
+
+
+Started GET "/recipes/7" for 127.0.0.1 at 2024-02-02 12:06:26 +0100
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/show.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/recipes/show.html.erb:12
+  [1m[36mRecipeFood Load (0.9ms)[0m  [1m[34mSELECT "recipe_foods".* FROM "recipe_foods" WHERE "recipe_foods"."recipe_id" = $1[0m  [["recipe_id", 7]]
+  ↳ app/views/recipes/show.html.erb:53
+  [1m[36mFood Load (0.8ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/recipes/show.html.erb:55
+  Rendered recipes/show.html.erb within layouts/application (Duration: 28.3ms | Allocations: 2218)
+  Rendered layout layouts/application.html.erb (Duration: 58.0ms | Allocations: 3967)
+Completed 200 OK in 77ms (Views: 56.9ms | ActiveRecord: 3.8ms | Allocations: 6201)
+
+
+Started GET "/general_shopping_list" for 127.0.0.1 at 2024-02-02 12:06:29 +0100
+Processing by RecipeFoodsController#general_shopping_list as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFood Load (0.5ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/recipe_foods_controller.rb:39:in `general_shopping_list'
+  [1m[36mRecipeFood Sum (0.4ms)[0m  [1m[34mSELECT SUM("recipe_foods"."quantity") FROM "recipe_foods" WHERE "recipe_foods"."food_id" = $1[0m  [["food_id", 6]]
+  ↳ app/models/food.rb:11:in `food_remnant'
+  [1m[36mRecipeFood Sum (0.7ms)[0m  [1m[34mSELECT SUM("recipe_foods"."quantity") FROM "recipe_foods" WHERE "recipe_foods"."food_id" = $1[0m  [["food_id", 7]]
+  ↳ app/models/food.rb:11:in `food_remnant'
+  Rendering layout layouts/application.html.erb
+  Rendering recipe_foods/general_shopping_list.html.erb within layouts/application
+  Rendered recipe_foods/general_shopping_list.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1010)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 1095)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 1.9ms | Allocations: 4686)
+
+
+  
+ActionView::Template::Error (undefined method `size' for nil:NilClass):
+     5:   <% else %>
+     6:   
+     7:     <div class="shopping-title">
+     8:       <p>Amount of food items to buy: <%=@food.size%></p>
+     9:       <% @total = @foods.sum { |food| shopping_value(food) } %>
+    10:       <p>Total value of food needed: $<%=@total%></p>
+    11:     </div>
+  
+app/views/recipe_foods/general_shopping_list.html.erb:8
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 12:06:42 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/general_shopping_list" for 127.0.0.1 at 2024-02-02 12:06:46 +0100
+Processing by RecipeFoodsController#general_shopping_list as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFood Load (0.5ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/recipe_foods_controller.rb:39:in `general_shopping_list'
+  [1m[36mRecipeFood Sum (0.5ms)[0m  [1m[34mSELECT SUM("recipe_foods"."quantity") FROM "recipe_foods" WHERE "recipe_foods"."food_id" = $1[0m  [["food_id", 6]]
+  ↳ app/models/food.rb:11:in `food_remnant'
+  [1m[36mRecipeFood Sum (0.5ms)[0m  [1m[34mSELECT SUM("recipe_foods"."quantity") FROM "recipe_foods" WHERE "recipe_foods"."food_id" = $1[0m  [["food_id", 7]]
+  ↳ app/models/food.rb:11:in `food_remnant'
+  Rendering layout layouts/application.html.erb
+  Rendering recipe_foods/general_shopping_list.html.erb within layouts/application
+  [1m[36mCACHE RecipeFood Sum (0.0ms)[0m  [1m[34mSELECT SUM("recipe_foods"."quantity") FROM "recipe_foods" WHERE "recipe_foods"."food_id" = $1[0m  [["food_id", 7]]
+  ↳ app/models/food.rb:11:in `food_remnant'
+  [1m[36mCACHE RecipeFood Sum (0.0ms)[0m  [1m[34mSELECT SUM("recipe_foods"."quantity") FROM "recipe_foods" WHERE "recipe_foods"."food_id" = $1[0m  [["food_id", 7]]
+  ↳ app/models/food.rb:11:in `food_remnant'
+  [1m[36mCACHE RecipeFood Sum (0.0ms)[0m  [1m[34mSELECT SUM("recipe_foods"."quantity") FROM "recipe_foods" WHERE "recipe_foods"."food_id" = $1[0m  [["food_id", 7]]
+  ↳ app/models/food.rb:11:in `food_remnant'
+  Rendered recipe_foods/general_shopping_list.html.erb within layouts/application (Duration: 13.1ms | Allocations: 1491)
+  Rendered layout layouts/application.html.erb (Duration: 36.0ms | Allocations: 3755)
+Completed 200 OK in 224ms (Views: 57.0ms | ActiveRecord: 39.9ms | Allocations: 22962)
+
+
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 12:07:13 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/general_shopping_list" for 127.0.0.1 at 2024-02-02 12:07:39 +0100
+Processing by RecipeFoodsController#general_shopping_list as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFood Load (0.5ms)[0m  [1m[34mSELECT "foods".* FROM "foods" WHERE "foods"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/recipe_foods_controller.rb:39:in `general_shopping_list'
+  [1m[36mRecipeFood Sum (0.4ms)[0m  [1m[34mSELECT SUM("recipe_foods"."quantity") FROM "recipe_foods" WHERE "recipe_foods"."food_id" = $1[0m  [["food_id", 6]]
+  ↳ app/models/food.rb:11:in `food_remnant'
+  [1m[36mRecipeFood Sum (0.5ms)[0m  [1m[34mSELECT SUM("recipe_foods"."quantity") FROM "recipe_foods" WHERE "recipe_foods"."food_id" = $1[0m  [["food_id", 7]]
+  ↳ app/models/food.rb:11:in `food_remnant'
+  Rendering layout layouts/application.html.erb
+  Rendering recipe_foods/general_shopping_list.html.erb within layouts/application
+  [1m[36mCACHE RecipeFood Sum (0.0ms)[0m  [1m[34mSELECT SUM("recipe_foods"."quantity") FROM "recipe_foods" WHERE "recipe_foods"."food_id" = $1[0m  [["food_id", 7]]
+  ↳ app/models/food.rb:11:in `food_remnant'
+  [1m[36mCACHE RecipeFood Sum (0.0ms)[0m  [1m[34mSELECT SUM("recipe_foods"."quantity") FROM "recipe_foods" WHERE "recipe_foods"."food_id" = $1[0m  [["food_id", 7]]
+  ↳ app/models/food.rb:11:in `food_remnant'
+  [1m[36mCACHE RecipeFood Sum (0.0ms)[0m  [1m[34mSELECT SUM("recipe_foods"."quantity") FROM "recipe_foods" WHERE "recipe_foods"."food_id" = $1[0m  [["food_id", 7]]
+  ↳ app/models/food.rb:11:in `food_remnant'
+  Rendered recipe_foods/general_shopping_list.html.erb within layouts/application (Duration: 13.7ms | Allocations: 1172)
+  Rendered layout layouts/application.html.erb (Duration: 38.5ms | Allocations: 2939)
+Completed 200 OK in 72ms (Views: 44.4ms | ActiveRecord: 2.0ms | Allocations: 6522)
+
+
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 12:07:44 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
+Started GET "/__webpack_hmr/client" for 127.0.0.1 at 2024-02-02 12:08:15 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/__webpack_hmr/client"):
+  
